@@ -2,20 +2,20 @@ import CarouselSlider from '@/komponen/CarouselSlider';
 import { Ionicons } from '@expo/vector-icons';
 import { useEffect, useMemo } from 'react';
 import {
-    Image,
-    ScrollView,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    useWindowDimensions,
-    View
+  Image,
+  ScrollView,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  useWindowDimensions,
+  View
 } from 'react-native';
 import Animated, {
-    FadeIn,
-    useAnimatedStyle,
-    useSharedValue,
-    withSpring,
-    withTiming,
+  FadeIn,
+  useAnimatedStyle,
+  useSharedValue,
+  withSpring,
+  withTiming,
 } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -26,6 +26,8 @@ const dummyProducts = [
   { id: 4, name: 'Bawang Merah', price: 2000, unit: '250g', img: 'https://images.unsplash.com/photo-1615484478819-20dbb72f87a8?w=800', rating: 4.7 },
   { id: 5, name: 'Kangkung Segar', price: 3000, unit: '1 ikat', img: 'https://images.unsplash.com/photo-1585501928334-0b7c5f8b8f8b?w=800', rating: 4.8 },
   { id: 6, name: 'Tomat Merah Segar', price: 8000, unit: '500g', img: 'https://images.unsplash.com/photo-1592924357228-91a4daa88427?w=800', rating: 4.9 },
+    { id: 7, name: 'Kangkung Segar', price: 3000, unit: '1 ikat', img: 'https://images.unsplash.com/photo-1585501928334-0b7c5f8b8f8b?w=800', rating: 4.8 },
+  { id: 8, name: 'Tomat Merah Segar', price: 8000, unit: '500g', img: 'https://images.unsplash.com/photo-1592924357228-91a4daa88427?w=800', rating: 4.9 },
 ];
 
 const categories = [
