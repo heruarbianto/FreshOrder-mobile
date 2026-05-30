@@ -76,9 +76,9 @@ export default function HomeScreen({ navigation }: any) {
           </View>
 
           <View className="flex-row items-center gap-5">
-            <TouchableOpacity>
+            {/* <TouchableOpacity>
               <Ionicons name="moon-outline" size={24} color="#666" />
-            </TouchableOpacity>
+            </TouchableOpacity> */}
             <TouchableOpacity className="relative" onPress={() => navigation.navigate('Cart')}>
               <Ionicons name="cart-outline" size={26} color="#666" />
               <View className="absolute -top-1 -right-1 bg-red-500 w-5 h-5 rounded-full items-center justify-center">
